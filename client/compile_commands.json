@@ -1,0 +1,16 @@
+[
+  {
+    "arguments": [
+      "/nix/store/888bkaqdpfpx72dd8bdc69qsqlgbhcvf-gcc-wrapper-13.3.0/bin/gcc",
+      "-c",
+      "-pthread",
+      "-I./vendor/raylib/include/",
+      "-o",
+      "client",
+      "main.c"
+    ],
+    "directory": "/home/winterveil/lab/mpgame/client",
+    "file": "/home/winterveil/lab/mpgame/client/main.c",
+    "output": "/home/winterveil/lab/mpgame/client/client"
+  }
+]

@@ -7,9 +7,13 @@ SRCS = main.c
 TARGET = client
 
 $(TARGET): $(SRCS)
-	$(CC) $(SRCS) -o $(TARGET) $(LDFLAGS) $(INCLUDES)
+	bear -- $(CC) $(SRCS) -o $(TARGET) $(LDFLAGS) $(INCLUDES)
 
 .PHONY: clean
 clean:
 	rm -f $(TARGET)
+
+.PHONY: dev
+dev: $(TARGET)
+	./$(TARGET)
 
